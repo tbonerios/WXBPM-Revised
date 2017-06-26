@@ -47,7 +47,7 @@ var navbar_initialized,
       doSomething();
     };
 
-    getLocation();
+    
 
     function doSomething(){
       console.log(zipcode);
@@ -111,7 +111,7 @@ var navbar_initialized,
             var done = false;
             function onPlayerStateChange(event) {
               if (event.data == YT.PlayerState.PLAYING && !done) {
-                setTimeout(stopVideo, 6000);
+                setTimeout(stopVideo, 60000);
                 done = true;
               }
             }
